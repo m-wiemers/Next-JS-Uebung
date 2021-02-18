@@ -1,6 +1,6 @@
 type Props = {
   age: number;
-  feuer: string;
+  name: string;
   change: any;
   onClick?(): void;
 };
@@ -8,8 +8,10 @@ type Props = {
 export default function NameBlock(props: Props) {
   return (
     <div>
-      <h1>Hello {props.age}</h1>
-      <button onClick={props.change}>{props.feuer}</button>
+      <h1>
+        {props.name} is {props.age} years old
+      </h1>
+      <button onClick={props.change}>{props.name}</button>
     </div>
   );
 }

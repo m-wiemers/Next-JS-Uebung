@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function Hausnummer(props: Props) {
-  return <h2>{props.hausnummer}</h2>;
+  return <h2>und wohnt in der Musterstraße {props.hausnummer}</h2>;
 }
